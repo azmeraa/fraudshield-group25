@@ -1,0 +1,7 @@
+{
+  "project": "Group 25 Credit Card Fraud Detection",
+  "model": "XGBoost",
+  "threshold": 0.994541585445404,
+  "feature_count": 30,
+  "intended_use": "Educational prototype; not production validated"
+}

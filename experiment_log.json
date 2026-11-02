@@ -1,0 +1,36 @@
+{
+  "project": "Real-Time Machine Learning-Based Credit Card Fraud Detection System",
+  "group": "Group 25",
+  "experiment_id": "group25_xgboost_final",
+  "recorded_at_utc": "2026-10-28T07:12:49.829420+00:00",
+  "dataset": {
+    "name": "European Credit Card Fraud Detection",
+    "transactions": 284807,
+    "fraud_transactions": 492,
+    "legitimate_transactions": 284315,
+    "fraud_percentage": 0.173
+  },
+  "training_setup": {
+    "model": "XGBoost",
+    "split": "70% training / 10% validation / 20% testing",
+    "class_imbalance_method": "SMOTE on training split only",
+    "threshold_selection": "Selected using validation-set fraud-class F1-score"
+  },
+  "selected_threshold": 0.994541585445404,
+  "test_metrics": {
+    "accuracy": 0.9995,
+    "precision": 0.961,
+    "recall": 0.7551,
+    "f1_score": 0.8457,
+    "roc_auc": 0.9788,
+    "average_precision": 0.8566,
+    "false_positives": 3,
+    "false_negatives": 24
+  },
+  "tracking_method": "JSON experiment record",
+  "limitations": [
+    "Metrics are from the held-out public dataset, not an Ethiopian bank.",
+    "The record documents an experiment; it is not a live tracking service.",
+    "Results do not establish production readiness."
+  ]
+}

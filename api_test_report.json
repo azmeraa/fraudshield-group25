@@ -1,0 +1,41 @@
+{
+  "project": "Group 25 Credit Card Fraud Detection",
+  "test_environment": "Google Colab local FastAPI TestClient",
+  "tests": [
+    {
+      "test": "Health endpoint",
+      "result": "PASS",
+      "detail": "Previously verified: HTTP 200."
+    },
+    {
+      "test": "Valid transaction",
+      "result": "PASS",
+      "detail": "Previously verified: HTTP 200."
+    },
+    {
+      "test": "Missing feature",
+      "result": "PASS",
+      "detail": "HTTP 422; missing Amount identified."
+    },
+    {
+      "test": "NaN input",
+      "result": "PASS",
+      "detail": "HTTP 422; non-finite input rejected."
+    },
+    {
+      "test": "API versus notebook scoring",
+      "result": "PASS",
+      "detail": {
+        "probability_match": true,
+        "prediction_match": true,
+        "threshold_match": true
+      }
+    }
+  ],
+  "limitations": [
+    "Local prototype tested in Google Colab.",
+    "Not deployed to a live banking system.",
+    "Uses a public European dataset, not Ethiopian bank transactions."
+  ],
+  "recorded_at_utc": "2026-10-28T07:03:36.773782+00:00"
+}
