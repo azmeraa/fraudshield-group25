@@ -1,3 +1,4 @@
+ HEAD
 # FraudShield – Group 25 Credit Card Fraud Detection
 
 ## 1. Project Overview
@@ -45,15 +46,12 @@ The deployment project contains the following main files:
 
 Open a terminal in the project folder and run:
 
-```bash
 docker build -t fraudshield-api .
-```
+
 
 Then start the container:
 
-```bash
 docker run -d --name group25-fraud-api -p 8000:8000 fraudshield-api
-```
 
 If the container is already running, do not run the second command again.
 
@@ -175,3 +173,27 @@ The evidence includes:
 FraudShield demonstrates the deployment of an XGBoost fraud detection model through a FastAPI application packaged with Docker. The prototype successfully exposes prediction, health-check, and monitoring endpoints and has been tested with fraud-labelled and legitimate-labelled transaction examples.
 
 The project provides a foundation for further testing, evaluation, monitoring, and improvement as part of the AI prototype demonstration and deployment planning assignment.
+
+title: FraudShield AI Fraud Detection
+emoji: 🛡️
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: "6.30.0"
+app_file: app.py
+pinned: false
+
+# 🛡️ FraudShield — Group 25
+
+### AI-Powered Credit Card Fraud Detection
+
+FraudShield is an educational machine-learning prototype that uses XGBoost to identify potentially fraudulent credit-card transactions.
+
+**Project:** FUSE AI-201 | Group 25  
+**Model:** XGBoost  
+**Application:** Gradio
+
+### Important Notice
+
+This project is an educational prototype using a public credit-card transaction dataset. It is not connected to a live bank, has not been validated for production use, and does not establish that a transaction is fraudulent.
+ origin/main
